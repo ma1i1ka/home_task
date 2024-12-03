@@ -1,0 +1,88 @@
+/* Общие стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Добавьте свой путь к картинке */
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Темный полупрозрачный фон */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для таблицы */
+.schedule table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+}
+
+.schedule th, .schedule td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: #8b4513; /* Коричневый фон для заголовков */
+    color: white;
+}
+
+.schedule td {
+    background-color: #f4f4f4;
+}
+
+/* Стили для раздела контента */
+.content {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Белый фон с прозрачностью */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

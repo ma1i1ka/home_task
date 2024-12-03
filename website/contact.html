@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Книжный магазин</title>
+    <style>
+        /* Общие стили для всего сайта */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6b4f3e; /* Темный цвет фона для шапки */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #3e2b1f; /* Темный цвет фона для навигации */
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #6b4f3e; /* Цвет фона при наведении */
+        }
+
+        /* Визитка сайта */
+        .intro {
+            background-color: #f4e1b2; /* Бежевый фон */
+            padding: 30px;
+            text-align: center;
+            color: #4a3c31; /* Темный текст */
+            border-bottom: 3px solid #6b4f3e; /* Темная граница снизу */
+        }
+
+        .intro h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Стили для формы */
+        .contact-form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #6b4f3e; /* Темный цвет фона */
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact-form button:hover {
+            background-color: #5a3e2b; /* Темный цвет фона при наведении */
+        }
+
+        /* Стили для футера */
+        footer {
+            background-color: #6b4f3e; /* Темный цвет для футера */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Книжный магазин</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="media.html">упражнения</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Визитка сайта -->
+    <section class="intro">
+        <h2>Свяжитесь с нами</h2>
+        <p>Мы всегда рады помочь и ответить на ваши вопросы. Заполните форму ниже, и мы обязательно свяжемся с вами!</p>
+    </section>
+
+    <!-- Основной контент страницы -->
+    <main>
+        <section class="contact-form">
+            <h2>Форма обратной связи</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required placeholder="Введите вашу электронную почту">
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required placeholder="Напишите ваше сообщение"></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Книжный магазин</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный бизнес - Главная</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6b4f3e;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #3e2b1f;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #6b4f3e;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #6b4f3e;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5a3e2b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>bookstore</h1>
+</header>
+
+<nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">О компании</a>
+    <a href="contact.html">Контакты</a>
+    <a href="registration.html">Регистрация</a>
+    <li><a href="media.html">упражнения</a></li>
+</nav>
+
+<div class="container">
+    <h2>Регистрация на мероприятие</h2>
+    <form action="#" method="post">
+        <label for="fullName">Полное имя:</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Введите ваше полное имя">
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required placeholder="Введите вашу электронную почту">
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required placeholder="Введите ваш пароль (не менее 8 символов)" minlength="8">
+
+        <label for="eventDate">Дата мероприятия:</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <label for="eventType">Тип мероприятия:</label>
+        <select id="eventType" name="eventType" required>
+            <option value="">Выберите тип мероприятия</option>
+            <option value="workshop">Мастер-класс</option>
+            <option value="seminar">Семинар</option>
+        </select>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+</body>
+</html>

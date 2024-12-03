@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный магазин</title>
+    <style>
+        /* Общие стили для всего сайта */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6b4f3e; /* Темный цвет фона для шапки */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #3e2b1f; /* Темный цвет фона для навигации */
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #6b4f3e; /* Цвет фона при наведении */
+        }
+
+        /* Визитка сайта */
+        .intro {
+            background-color: #f4e1b2; /* Бежевый фон */
+            padding: 30px;
+            text-align: center;
+            color: #4a3c31; /* Темный текст */
+            border-bottom: 3px solid #6b4f3e; /* Темная граница снизу */
+        }
+
+        .intro h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Стили для таблицы */
+        .schedule table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8); /* Легкий белый фон */
+        }
+
+        .schedule th, .schedule td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .schedule th {
+            background-color: #6b4f3e; /* Цвет фона для заголовков таблицы */
+            color: white;
+        }
+
+        .schedule td {
+            background-color: #f4e1b2; /* Светлый фон для ячеек */
+        }
+
+        /* Стили для раздела контента */
+        .content {
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Стили для футера */
+        footer {
+            background-color: #6b4f3e; /* Темный цвет для футера */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш книжный магазин!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="registration.html">Регистрация</a></li>
+                <li><a href="media.html">упражнения</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Визитка сайта -->
+    <section class="intro">
+        <h2>Мы рады приветствовать вас в нашем книжном магазине!</h2>
+        <p>В нашем ассортименте — только лучшие книги, которые вдохновляют, учат и развлекают. Подбирайте книги для любого возраста и интереса. Присоединяйтесь к нам и открывайте мир литературы!</p>
+    </section>
+
+    <!-- Основной контент страницы -->
+    <main>
+        <section class="schedule">
+            <h2>Расписание встреч</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>День</th>
+                        <th>Время</th>
+                        <th>Тема</th>
+                        <th>Задачи</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Понедельник</td>
+                        <td>10:00 - 12:00</td>
+                        <td>Обзор лучших книг месяца</td>
+                        <td>
+                            <ul>
+                                <li>Обзор популярных книг</li>
+                                <li>Рекомендации для читателей</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Вторник</td>
+                        <td>13:00 - 16:00</td>
+                        <td>Работа с клиентами</td>
+                        <td>
+                            <ul>
+                                <li>Обсуждение предпочтений клиентов</li>
+                                <li>Консультирование по книгам</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Среда</td>
+                        <td>9:00 - 12:00</td>
+                        <td>Рынок книг для детей</td>
+                        <td>
+                            <ul>
+                                <li>Обзор книг для детей</li>
+                                <li>Рекомендации по возрастным категориям</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Четверг</td>
+                        <td>14:00 - 17:00</td>
+                        <td>Тематические выставки книг</td>
+                        <td>
+                            <ul>
+                                <li>Организация выставок</li>
+                                <li>Демонстрация новых книг</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Пятница</td>
+                        <td>11:00 - 14:00</td>
+                        <td>Чтения и презентации</td>
+                        <td>
+                            <ul>
+                                <li>Чтение отрывков из новых книг</li>
+                                <li>Презентация новых авторов</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="content">
+            <h2>Лучшие книги месяца</h2>
+            <p>Мы рады представить вам книги, которые особенно популярны в этом месяце.</p>
+            <ul>
+                <li><strong>Граф Монте-Кристо</strong> - Александр Дюма</li>
+                <li><strong>Атлант расправил плечи</strong> - Айн Рэнд</li>
+                <li><strong>Мартин Иден</strong> - Джек Лондон</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Книжный магазин</p>
+    </footer>
+</body>
+</html>
